@@ -12,12 +12,14 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+@import "https://einstein.computing.dcu.ie/fonts/fonts.css";
+
 body {
   background: #fff;
   color: rgb(0 0 0 / 0.8);
   padding: 0;
   margin: 0;
-  font-family: "Noto Serif", "DejaVu Serif", serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   font-size: inherit;
   line-height: 1;
   position: relative;
@@ -252,7 +254,7 @@ table.tableblock > .title,
 .qlist > .title,
 .hdlist > .title {
   line-height: 1.45;
-  color: #7a2518;
+  color: #2156a5;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 0.25em;
@@ -272,10 +274,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Open Sans", "DejaVu Sans", sans-serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #ba3925;
+  color: #2156a5;
   text-rendering: optimizeLegibility;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -300,12 +302,38 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6875em;
+  font-size: 1.1875em;
 }
 
-h3,
 #toctitle,
 .sidebarblock > .content > .title {
+  font-size: 1.375em;
+}
+
+.subheader,
+.admonitionblock td.content > .title,
+.audioblock > .title,
+.exampleblock > .title,
+.imageblock > .title,
+.listingblock > .title,
+.literalblock > .title,
+.stemblock > .title,
+.openblock > .title,
+.paragraph > .title,
+.quoteblock > .title,
+table.tableblock > .title,
+.verseblock > .title,
+.videoblock > .title,
+.dlist > .title,
+.olist > .title,
+.ulist > .title,
+.qlist > .title,
+.hdlist > .title,
+h2, h3, h4, h5, h6 {
+  margin-left: 5px;
+}
+
+h3 {
   font-size: 1.375em;
 }
 
@@ -390,13 +418,14 @@ blockquote p {
   }
 
   h2 {
-    font-size: 2.3125em;
+    /* font-size: 2.3125em; */
+    font-size: 1.8em;
   }
 
   h3,
   #toctitle,
   .sidebarblock > .content > .title {
-    font-size: 1.6875em;
+    font-size: 1.1875em;
   }
 
   h4 {
@@ -624,7 +653,7 @@ body > div[id]::after,
 }
 
 #header > h1:first-child {
-  color: rgb(0 0 0 / 0.85);
+  color: #2156a5;
   margin-top: 2.25rem;
   margin-bottom: 0;
 }
@@ -646,7 +675,7 @@ body.toc2 #header > h1:nth-last-child(2) {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   padding-left: 0.25em;
-  color: rgb(0 0 0 / 0.6);
+  color: #2156a5;
   display: flex;
   flex-flow: row wrap;
 }
@@ -656,7 +685,7 @@ body.toc2 #header > h1:nth-last-child(2) {
 }
 
 #header .details span.email a {
-  color: rgb(0 0 0 / 0.85);
+  color: #2156a5;
 }
 
 #header .details br {
@@ -669,7 +698,7 @@ body.toc2 #header > h1:nth-last-child(2) {
 
 #header .details br + span.author::before {
   content: "\00a0\22c5\00a0";
-  color: rgb(0 0 0 / 0.85);
+  color: #2156a5;
 }
 
 #header .details br + span#revremark::before {
@@ -711,7 +740,7 @@ body.toc2 #header > h1:nth-last-child(2) {
 }
 
 #toc ul {
-  font-family: "Open Sans", "DejaVu Sans", sans-serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   list-style-type: none;
 }
 
@@ -729,7 +758,7 @@ body.toc2 #header > h1:nth-last-child(2) {
 }
 
 #toctitle {
-  color: #7a2518;
+  color: #2156a5;
   font-size: 1.2em;
 }
 
@@ -796,7 +825,7 @@ body.toc2 #header > h1:nth-last-child(2) {
 
 @media screen and (min-width: 1280px) {
   body.toc2 {
-    padding-left: 20em;
+    padding-left: 15em;
     padding-right: 0;
   }
 
@@ -1021,9 +1050,9 @@ table.tableblock > .title,
 .hdlist > .title {
   text-rendering: optimizeLegibility;
   text-align: left;
-  font-family: "Noto Serif", "DejaVu Serif", serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   font-size: 1rem;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 table.tableblock.fit-content > caption.title {
@@ -1035,7 +1064,7 @@ table.tableblock.fit-content > caption.title {
 #preamble > .sectionbody > [class=paragraph]:first-of-type p {
   font-size: 1.21875em;
   line-height: 1.6;
-  color: rgb(0 0 0 / 0.85);
+  color: #2156a5;
 }
 
 .admonitionblock > table {
@@ -1056,7 +1085,7 @@ table.tableblock.fit-content > caption.title {
 
 .admonitionblock > table td.icon .title {
   font-weight: bold;
-  font-family: "Open Sans", "DejaVu Sans", sans-serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1106,9 +1135,9 @@ table.tableblock.fit-content > caption.title {
 }
 
 .sidebarblock > .content > .title {
-  color: #7a2518;
+  color: #2156a5;
   margin-top: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .exampleblock > .content > :last-child > :last-child,
@@ -1124,7 +1153,8 @@ table.tableblock.fit-content > caption.title {
 
 .literalblock pre,
 .listingblock > .content > pre {
-  border-radius: 4px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
   overflow-x: auto;
   padding: 1em;
   font-size: 0.8125em;
@@ -1275,7 +1305,8 @@ pre.rouge span.linenos {
 .quoteblock blockquote,
 .quoteblock p {
   color: rgb(0 0 0 / 0.85);
-  font-size: 1.15rem;
+  /* font-size: 1.15rem; */
+  font-size: 1.00rem;
   line-height: 1.75;
   word-spacing: 0.1em;
   letter-spacing: 0;
@@ -1296,7 +1327,7 @@ pre.rouge span.linenos {
   font-weight: bold;
   line-height: 0.6em;
   margin-left: -0.6em;
-  color: #7a2518;
+  color: #2156a5;
   text-shadow: 0 1px 2px rgb(0 0 0 / 0.1);
 }
 
@@ -1315,7 +1346,7 @@ pre.rouge span.linenos {
 }
 
 .verseblock pre {
-  font-family: "Open Sans", "DejaVu Sans", sans-serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   font-size: 1.15rem;
   color: rgb(0 0 0 / 0.85);
   font-weight: 300;
@@ -2002,7 +2033,7 @@ a span.icon > .fa {
   width: 1.67em;
   height: 1.67em;
   line-height: 1.67em;
-  font-family: "Open Sans", "DejaVu Sans", sans-serif;
+  font-family: "Open Sans", "Noto Serif", "DejaVu Serif", "Lucida Sans Unicode", sans-serif;
   font-style: normal;
   font-weight: bold;
 }
