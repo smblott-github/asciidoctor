@@ -1,3 +1,5 @@
+@import "https://einstein.computing.dcu.ie/fonts/fonts.css";
+
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
 /* Uncomment the following line when using as a custom stylesheet */
 /* @import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700"; */
@@ -11,8 +13,6 @@ html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
 }
-
-@import "https://einstein.computing.dcu.ie/fonts/fonts.css";
 
 body {
   background: #fff;
@@ -141,7 +141,7 @@ mark {
 
 p {
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.8rem;
   text-rendering: optimizeLegibility;
 }
 
@@ -329,7 +329,8 @@ table.tableblock > .title,
 .ulist > .title,
 .qlist > .title,
 .hdlist > .title,
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+#header .details {
   margin-left: 5px;
 }
 
@@ -414,7 +415,7 @@ blockquote p {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 2.75em;
+    font-size: 2.20em;
   }
 
   h2 {
@@ -654,7 +655,7 @@ body > div[id]::after,
 
 #header > h1:first-child {
   color: #2156a5;
-  margin-top: 2.25rem;
+  margin-top: 1.25rem;
   margin-bottom: 0;
 }
 
