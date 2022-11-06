@@ -870,12 +870,11 @@ body.toc2 #header > h1:nth-last-child(2) {
 
 #footer {
   max-width: none;
-  background: rgb(0 0 0 / 0.8);
   padding: 0.5em;
 }
 
 #footer-text {
-  color: rgb(255 255 255 / 0.8);
+  color: rgb(0 0 0 / 0.5);
   line-height: 1.44;
   float: right;
   padding-right: 5px;
@@ -1078,7 +1077,8 @@ table.tableblock.fit-content > caption.title {
 }
 
 .admonitionblock > table td.icon {
-  text-align: center;
+  /* text-align: center; */
+  text-align: right;
   width: 80px;
 }
 
@@ -2024,6 +2024,16 @@ a span.icon > .fa {
 .admonitionblock td.icon .icon-important::before {
   content: "\f06a";
   color: #bf0000;
+}
+
+.admonitionblock td.icon {
+  vertical-align: top;
+}
+
+.admonitionblock td.icon div.title {
+  color: #2156a5;
+  opacity: 0.8;
+  font-style: italic;
 }
 
 .conum[data-value] {
