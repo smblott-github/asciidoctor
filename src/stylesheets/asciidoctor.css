@@ -871,12 +871,14 @@ body.toc2 #header > h1:nth-last-child(2) {
 #footer {
   max-width: none;
   background: rgb(0 0 0 / 0.8);
-  padding: 1.25em;
+  padding: 0.5em;
 }
 
 #footer-text {
   color: rgb(255 255 255 / 0.8);
   line-height: 1.44;
+  float: right;
+  padding-right: 5px;
 }
 
 .sect1 {
