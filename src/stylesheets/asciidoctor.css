@@ -830,9 +830,11 @@ body.toc2 #header > h1:nth-last-child(2) {
     padding-right: 0;
   }
 
+  /*
   #toc.toc2 {
     width: 20em;
   }
+  */
 
   #toc.toc2 #toctitle {
     font-size: 1.375em;
